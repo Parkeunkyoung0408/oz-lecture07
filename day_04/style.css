@@ -1,0 +1,37 @@
+*{
+    margin:0;
+    padding:0;
+}
+/*body의 배경색 변경*/
+body {
+    background-color: #f7f8f8;
+}
+/*h1태그의 글씨색 변경*/
+h1 {
+    color : black;
+}
+.blue {
+    color: blue;
+}
+#title {
+    color:red; 
+}
+P {
+    line-height: 1.6;
+}
+/* class="card"가 붙은 요소 */
+.card {
+    border: 1px solid;
+    border-color:rgb(40, 71, 71);
+}
+#intro { 
+    border-top:2px solid;
+}
+/* nav 바로 아래 a 태그만 */
+nav > a {
+    text-decoration:none;
+}
+/* 링크에 마우스를 올렸을 때 */
+a:hover {
+    color:#0b6fb8;
+}
