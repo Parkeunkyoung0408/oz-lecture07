@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>코드로 키우는 용돈</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<main>
+  <header><span class="eyebrow">JAVASCRIPT 첫걸음</span><h1>💰 코드로 키우는 용돈</h1><p>결과를 예상하고, 코드를 실행하며 배워요.</p></header>
+  <nav aria-label="학습 진행"><ol id="steps"></ol></nav>
+  <section class="wallet" aria-label="게임 상태">
+    <div><span>💰 남은 용돈</span><strong id="money"></strong><code>money</code></div>
+    <div><span>🍪 간식</span><strong id="snacks"></strong><code>snackCount</code></div>
+    <div><span>🎁 선물</span><strong id="gift"></strong><code id="gift-code"></code></div>
+  </section>
+  <div class="layout">
+    <section class="panel" aria-labelledby="mission-title">
+      <span class="eyebrow" id="mission-number"></span><h2 id="mission-title" tabindex="-1"></h2><p id="description"></p>
+      <div class="action" id="action"></div>
+      <p class="label">이번에 실행할 코드</p><pre><code id="code"></code></pre>
+      <fieldset id="prediction"><legend id="question"></legend><div id="answers"></div></fieldset>
+      <button id="run" class="primary" disabled>답을 선택한 뒤 실행하기</button>
+      <p id="feedback" role="status"></p>
+    </section>
+    <section class="panel result" aria-labelledby="result-title">
+      <span class="eyebrow">실행 결과</span><h2 id="result-title">변수가 바뀌는 순간</h2>
+      <div id="changes"><p class="muted">왼쪽에서 답을 선택하고 코드를 실행해보세요.</p></div>
+      <div id="explanation" class="explanation" hidden></div>
+      <button id="next" class="primary" hidden>다음 미션으로 →</button>
+    </section>
+  </div>
+  <footer><p>틀려도 괜찮아요. 다시 예상해볼 수 있어요.</p><button id="reset" class="secondary">처음부터 다시 하기</button></footer>
+</main>
+</body>
+</html>
