@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>폼 이벤트 연습</title>
+</head>
+<body>
+  <form id="todo-form">
+    <input id="todo-input" type="text">
+    <button id="add-btn" type="submit">추가</button>
+  </form>
+
+  <script>
+    const form = document.querySelector("#todo-form");
+    const addBtn = document.querySelector("#add-btn");
+
+    // 아래 코드를 한 번에 하나씩 넣어 실험하세요.
+    addBtn.addEventListener("submit", (event) => event.preventDefault());
+  </script>
+</body>
+</html>

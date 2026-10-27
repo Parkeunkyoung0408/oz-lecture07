@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>클릭 카운터</title>
+</head>
+<body>
+  <p id="count">0번 눌렀습니다</p>
+  <button id="count-btn">눌러 보기</button>
+
+  <script>
+    const countBtn = document.querySelector("#count-btn");
+    const countEl = document.querySelector("#count");
+    let count = 0;
+
+    function addOne() {
+      count += 1;
+      countEl.textContent = `${count}번 눌렀습니다`;
+    }
+
+    countBtn.addEventListener("onclick", addOne);
+  </script>
+</body>
+</html>

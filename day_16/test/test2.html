@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>나이 입력 연습</title>
+</head>
+<body>
+  <label for="age">나이:</label>
+  <input id="age" type="number">
+
+  <script>
+    const ageInput = document.querySelector("#age");
+
+    ageInput.addEventListener("input", (event) => {
+      console.log(event.type, event.target.id, event.target.value);
+    });
+
+    ageInput.addEventListener("keyup", (event) => {
+      console.log(event.key);
+    });
+  </script>
+</body>
+</html>
